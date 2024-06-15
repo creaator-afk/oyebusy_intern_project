@@ -16,6 +16,8 @@ html {
 
 [class*="link"] {
     cursor: pointer;
+    text-decoration: none;
+    list-style: none;
 }
 
 [class*="tag"] {
@@ -118,4 +120,17 @@ header nav>*:hover {
 
 .image__container h2 {
     color: var(--clr-white);
+}
+
+.image__container .link {
+    color: white;
+}
+
+.image__container .link+a{
+    margin-left: 1rem;
+
+}
+
+.image__container .link * {
+    margin-left: 0.25rem;
 }
