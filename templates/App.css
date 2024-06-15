@@ -90,6 +90,7 @@ header nav>*:hover {
 .hero-layout-2-col {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(23.75rem, 1fr));
+    gap: 1rem;
 }
 
 @media screen and (min-width: 45rem) {
