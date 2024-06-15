@@ -40,6 +40,7 @@ img {
 }
 
 header {
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -60,10 +61,12 @@ header .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 header nav {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -84,12 +87,14 @@ header nav>*:hover {
 
 .hero-layout-2-col {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(23.75rem, 1fr));
 }
 
-.hero-layout-2-col> :first-child {
-    grid-area: span 2 / span 2;
+@media screen and (min-width: 45rem) {
+    .hero-layout-2-col> :first-child {
+        grid-area: span 2 / span 2;
+    }
+
 }
 
 .hero-layout-2-col> :first-child>img {
@@ -106,9 +111,9 @@ header nav>*:hover {
 }
 
 .container .image__container .container {
-    padding: 2rem;
+    padding: 2rem 0 1rem 1rem;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
 }
 
 .image__container h2 {
