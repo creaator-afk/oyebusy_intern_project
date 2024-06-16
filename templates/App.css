@@ -6,7 +6,10 @@
 :root {
     --clr-red: red;
     --clr-white: white;
+    --clr-gray: gray;
+    --clr-black: black;
     --tag-border: 0.25rem;
+    --img-border: 5px;
 }
 
 
@@ -28,6 +31,11 @@ html {
     padding: 0 0.15rem;
 }
 
+img.icon[src$="person.svg"],
+img.icon[src$="calender.svg"] {
+    filter: grayscale(100%) brightness(0.6);
+}
+
 nav>li {
     list-style: none;
 }
@@ -36,10 +44,37 @@ img {
     width: 100%;
 }
 
+.container-fixed-height {
+    max-height: 30rem;
+}
+
 .container.layout-center {
     max-width: 87.5rem;
     margin-inline: auto;
 }
+
+.container:has(.topics:first-child) {
+    display: flex;
+}
+
+.container>img {
+    border-radius: var(--img-border);
+}
+
+.container .container:first-of-type {
+    border-radius: 0.75rem;
+}
+
+.container .image__container:has(> img:first-child) {
+    position: relative;
+}
+
+.container .image__container .container {
+    padding: 2rem 0 1rem 1rem;
+    position: absolute;
+    bottom: 10px;
+}
+
 
 header {
     padding: 2rem;
@@ -105,20 +140,6 @@ header nav>*:hover {
     object-fit: cover;
 }
 
-.container .container:first-of-type {
-    border-radius: 0.75rem;
-}
-
-.container .image__container:has(> img:first-child) {
-    position: relative;
-}
-
-.container .image__container .container {
-    padding: 2rem 0 1rem 1rem;
-    position: absolute;
-    bottom: 10px;
-}
-
 .image__container h2 {
     color: var(--clr-white);
 }
@@ -127,11 +148,48 @@ header nav>*:hover {
     color: white;
 }
 
-.image__container .link+a{
+.image__container .link+a {
     margin-left: 1rem;
-
 }
 
 .image__container .link * {
     margin-left: 0.25rem;
+}
+
+.topics__bar+.container {
+    display: flex;
+}
+
+.topics nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topics nav .icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.topics h2 {
+    text-transform: capitalize;
+}
+
+.topics nav>div {
+    display: flex;
+    gap: 5px;
+}
+
+.topics nav button .icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.topics nav button {
+    cursor: pointer;
+    background-color: var(--clr-gray);
+    padding: 5px 10px;
+}
+
+.topics nav button:hover {
+    background-color: var(--clr-black);
 }
