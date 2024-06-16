@@ -10,6 +10,7 @@
     --clr-black: black;
     --tag-border: 0.25rem;
     --img-border: 5px;
+    --gap15px: 0.9375rem;
 }
 
 
@@ -32,6 +33,7 @@ html {
 }
 
 img.icon[src$="person.svg"],
+img.icon[src$="zig.svg"],
 img.icon[src$="calender.svg"] {
     filter: grayscale(100%) brightness(0.6);
 }
@@ -46,8 +48,28 @@ img {
     object-fit: cover;
 }
 
-.image__container img.icon{
+.image__container img.icon {
     filter: brightness(1);
+}
+
+.image__container>img:first-child {
+    border-radius: 5px;
+}
+
+.image__container .container> :is(h3, h2) {
+    text-transform: capitalize;
+}
+
+.image__container--sidewise {
+    display: flex;
+    align-items: center;
+    gap: var(--gap15px);
+}
+
+.image__container--sidewise>img {
+    border-radius: 10px;
+    /* should have consistent width */
+    width: 120px;
 }
 
 .container-fixed-height {
@@ -55,12 +77,23 @@ img {
 }
 
 .container.layout-center {
+    padding: 1rem;
     max-width: 75rem;
     margin-inline: auto;
 }
 
 .container:has(.topics:first-child) {
     display: flex;
+    gap: 0.9375rem;
+}
+
+@media screen and (max-width: 45rem) {
+    .container:has(.topics:first-child) {
+        flex-direction: column;
+    }
+    .topics__bar+.container {
+        flex-direction: column;
+    }
 }
 
 .container>img {
@@ -73,6 +106,7 @@ img {
 
 .container .image__container:has(> img:first-child) {
     position: relative;
+    color: white;
 }
 
 .container .image__container .container {
@@ -81,6 +115,10 @@ img {
     bottom: 10px;
 }
 
+.container .image__container .container .link:last-child:not(:has(img)) {
+    display: block;
+    text-decoration: underline;
+}
 
 header {
     padding: 2rem;
@@ -167,16 +205,12 @@ header nav>*:hover {
     color: white;
 }
 
-.image__container .link+a {
+.image__container .link+a::has(img) {
     margin-left: 1rem;
 }
 
-.image__container .link * {
+.image__container .link *:not(:first-child) {
     margin-left: 0.25rem;
-}
-
-.topics__bar+.container {
-    display: flex;
 }
 
 .topics nav {
@@ -211,4 +245,25 @@ header nav>*:hover {
 
 .topics nav button:hover {
     background-color: var(--clr-black);
+}
+
+.topics .right:has(.content:first-of-type, .content:first-child) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topics__bar+.container {
+    display: flex;
+    gap: var(--gap15px);
+}
+
+.topics .right h2 {
+    font-size: 1.2rem;
+}
+
+.fashion>.container {
+    display: grid;
+    grid-template-rows: 300px 120px;
+    gap: 2rem;
 }
