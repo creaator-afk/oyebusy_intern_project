@@ -47,6 +47,11 @@ img.icon[src$="calender.svg"] {
     filter: grayscale(100%) brightness(0.6);
 }
 
+img.icon[src$="person.svg"],
+img.icon[src$="calender.svg"] {
+    filter: grayscale(100%) brightness(0.6);
+}
+
 nav>li {
     list-style: none;
 }
@@ -85,6 +90,10 @@ img {
     max-height: 30rem;
 }
 
+.container-fixed-height {
+    max-height: 30rem;
+}
+
 .container.layout-center {
     padding: 1rem;
     max-width: 75rem;
@@ -104,6 +113,7 @@ img {
     .topics__bar+.container {
         flex-direction: column;
     }
+
 }
 
 .container>img {
@@ -178,6 +188,7 @@ header nav>*:hover {
 
 .hero-layout-2-col {
     display: grid;
+
     grid-template-columns: repeat(3, minmax(10rem, 720px));
     gap: 0.9375rem;
     justify-content: center;
