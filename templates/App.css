@@ -19,17 +19,19 @@ html {
 }
 
 [class*="link"] {
+    font-size: 14px;
     cursor: pointer;
     text-decoration: none;
     list-style: none;
 }
 
 [class*="tag"] {
+    font-size: 12px;
     background-color: var(--clr-red);
     text-decoration: none;
     color: var(--clr-white);
     border-radius: var(--tag-border);
-    padding: 0 0.15rem;
+    padding: 3px 4px;
 }
 
 img.icon[src$="person.svg"],
@@ -91,6 +93,7 @@ img {
     .container:has(.topics:first-child) {
         flex-direction: column;
     }
+
     .topics__bar+.container {
         flex-direction: column;
     }
@@ -198,6 +201,7 @@ header nav>*:hover {
 }
 
 .image__container h2 {
+    font-size: 0.80rem;
     color: var(--clr-white);
 }
 
@@ -219,31 +223,31 @@ header nav>*:hover {
 }
 
 .topics nav .icon {
-    width: 2rem;
-    height: 2rem;
+    width: 1rem;
+    height: 1rem;
 }
 
 .topics h2 {
     text-transform: capitalize;
 }
 
-.topics nav>div {
+nav>div {
     display: flex;
     gap: 5px;
 }
 
-.topics nav button .icon {
+nav button .icon {
     width: 1rem;
     height: 1rem;
 }
 
-.topics nav button {
+nav button {
     cursor: pointer;
     background-color: var(--clr-gray);
     padding: 5px 10px;
 }
 
-.topics nav button:hover {
+nav button:hover {
     background-color: var(--clr-black);
 }
 
@@ -266,4 +270,47 @@ header nav>*:hover {
     display: grid;
     grid-template-rows: 300px 120px;
     gap: 2rem;
+}
+
+.hot-topics__bar>nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hot-topics {
+    display: flex;
+    gap: var(--gap15px);
+    flex-wrap: wrap;
+}
+.hot-topics .image__container{
+    flex-basis: max(300px, calc(100% / 4) - var(--gap15px));
+    flex-shrink: 1;
+}
+
+.layout-3-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+    gap: var(--gap15px);
+}
+
+.col-container .container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.col-container>.container>.content {
+    display: flex;
+    gap: var(--gap15px);
+    flex-wrap: wrap;
+}
+
+.col-container>.container>.content h3 {
+    font-size: 0.8rem;
+    min-width: 300px;
+}
+
+.col-container>.container>.content>img {
+    max-width: 100px;
+    aspect-ratio: 1/1;
 }
