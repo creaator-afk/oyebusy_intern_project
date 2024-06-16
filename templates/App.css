@@ -10,6 +10,7 @@
     --clr-black: black;
     --tag-border: 0.25rem;
     --img-border: 5px;
+    --gap15px: 0.9375rem;
 }
 
 
@@ -18,17 +19,32 @@ html {
 }
 
 [class*="link"] {
+    font-size: 14px;
     cursor: pointer;
     text-decoration: none;
     list-style: none;
 }
 
 [class*="tag"] {
+    font-size: 12px;
     background-color: var(--clr-red);
     text-decoration: none;
     color: var(--clr-white);
     border-radius: var(--tag-border);
-    padding: 0 0.15rem;
+    padding: 3px 4px;
+}
+
+.link--button{
+    color: white;
+    background-color: var(--clr-red);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+img.icon[src$="person.svg"],
+img.icon[src$="zig.svg"],
+img.icon[src$="calender.svg"] {
+    filter: grayscale(100%) brightness(0.6);
 }
 
 img.icon[src$="person.svg"],
@@ -42,6 +58,36 @@ nav>li {
 
 img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image__container img.icon {
+    filter: brightness(1);
+}
+
+.image__container>img:first-child {
+    border-radius: 5px;
+}
+
+.image__container .container> :is(h3, h2) {
+    text-transform: capitalize;
+}
+
+.image__container--sidewise {
+    display: flex;
+    align-items: center;
+    gap: var(--gap15px);
+}
+
+.image__container--sidewise>img {
+    border-radius: 10px;
+    /* should have consistent width */
+    width: 120px;
+}
+
+.container-fixed-height {
+    max-height: 30rem;
 }
 
 .container-fixed-height {
@@ -49,12 +95,25 @@ img {
 }
 
 .container.layout-center {
-    max-width: 87.5rem;
+    padding: 1rem;
+    max-width: 75rem;
     margin-inline: auto;
 }
 
 .container:has(.topics:first-child) {
     display: flex;
+    gap: 0.9375rem;
+}
+
+@media screen and (max-width: 45rem) {
+    .container:has(.topics:first-child) {
+        flex-direction: column;
+    }
+
+    .topics__bar+.container {
+        flex-direction: column;
+    }
+
 }
 
 .container>img {
@@ -67,6 +126,7 @@ img {
 
 .container .image__container:has(> img:first-child) {
     position: relative;
+    color: white;
 }
 
 .container .image__container .container {
@@ -75,6 +135,10 @@ img {
     bottom: 10px;
 }
 
+.container .image__container .container .link:last-child:not(:has(img)) {
+    display: block;
+    text-decoration: underline;
+}
 
 header {
     padding: 2rem;
@@ -124,23 +188,38 @@ header nav>*:hover {
 
 .hero-layout-2-col {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(23.75rem, 1fr));
-    gap: 1rem;
+
+    grid-template-columns: repeat(3, minmax(10rem, 720px));
+    gap: 0.9375rem;
+    justify-content: center;
 }
 
-@media screen and (min-width: 45rem) {
-    .hero-layout-2-col> :first-child {
-        grid-area: span 2 / span 2;
-    }
-
-}
-
-.hero-layout-2-col> :first-child>img {
-    height: 37.5rem;
+.hero-layout-2-col .image__container:first-of-type {
+    max-height: 585px;
+    grid-column: span 2;
+    grid-row: span 2;
     object-fit: cover;
 }
 
+.hero-layout-2-col .image__container:not(:first-of-type)>img {
+    object-fit: cover;
+    object-position: center top;
+}
+
+@media screen and (max-width:75rem) {
+    .hero-layout-2-col {
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    }
+
+    .hero-layout-2-col .image__container:first-of-type {
+        grid-column: auto;
+        grid-row: auto;
+        /* grid-area: auto; */
+    }
+}
+
 .image__container h2 {
+    font-size: 0.80rem;
     color: var(--clr-white);
 }
 
@@ -148,16 +227,12 @@ header nav>*:hover {
     color: white;
 }
 
-.image__container .link+a {
+.image__container .link+a::has(img) {
     margin-left: 1rem;
 }
 
-.image__container .link * {
+.image__container .link *:not(:first-child) {
     margin-left: 0.25rem;
-}
-
-.topics__bar+.container {
-    display: flex;
 }
 
 .topics nav {
@@ -166,30 +241,114 @@ header nav>*:hover {
 }
 
 .topics nav .icon {
-    width: 2rem;
-    height: 2rem;
+    width: 1rem;
+    height: 1rem;
 }
 
 .topics h2 {
     text-transform: capitalize;
 }
 
-.topics nav>div {
+nav>div {
     display: flex;
     gap: 5px;
 }
 
-.topics nav button .icon {
+nav button .icon {
     width: 1rem;
     height: 1rem;
 }
 
-.topics nav button {
+nav button {
     cursor: pointer;
     background-color: var(--clr-gray);
     padding: 5px 10px;
 }
 
-.topics nav button:hover {
+nav button:hover {
     background-color: var(--clr-black);
+}
+
+.topics .right:has(.content:first-of-type, .content:first-child) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topics__bar+.container {
+    display: flex;
+    gap: var(--gap15px);
+}
+
+.topics .right h2 {
+    font-size: 1.2rem;
+}
+
+.fashion>.container {
+    display: grid;
+    grid-template-rows: 300px 120px;
+    gap: 2rem;
+}
+
+.hot-topics__bar>nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hot-topics {
+    display: flex;
+    gap: var(--gap15px);
+    flex-wrap: wrap;
+}
+.hot-topics .image__container{
+    flex-basis: max(300px, calc(100% / 4) - var(--gap15px));
+    flex-shrink: 1;
+}
+
+.layout-3-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+    gap: var(--gap15px);
+}
+
+.col-container .container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.col-container>.container>.content {
+    display: flex;
+    gap: var(--gap15px);
+    flex-wrap: wrap;
+}
+
+.col-container>.container>.content h3 {
+    font-size: 0.8rem;
+    min-width: 300px;
+}
+
+.col-container>.container>.content>img {
+    max-width: 100px;
+    aspect-ratio: 1/1;
+}
+
+.banner {
+    height: 10em;
+    border-radius: var(--img-border);
+    background: url("./resources/img_12.png") center right / cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.banner h2 {
+    font-weight: bold;
+}
+
+.banner p {
+    color: var(--clr-gray);
+}
+
+.banner > *{
+    flex-basis: 100%;
 }
