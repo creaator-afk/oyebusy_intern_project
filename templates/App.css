@@ -34,6 +34,13 @@ html {
     padding: 3px 4px;
 }
 
+.link--button{
+    color: white;
+    background-color: var(--clr-red);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
 img.icon[src$="person.svg"],
 img.icon[src$="zig.svg"],
 img.icon[src$="calender.svg"] {
@@ -313,4 +320,24 @@ nav button:hover {
 .col-container>.container>.content>img {
     max-width: 100px;
     aspect-ratio: 1/1;
+}
+
+.banner {
+    height: 10em;
+    border-radius: var(--img-border);
+    background: url("./resources/img_12.png") center right / cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.banner h2 {
+    font-weight: bold;
+}
+
+.banner p {
+    color: var(--clr-gray);
+}
+
+.banner > *{
+    flex-basis: 100%;
 }
