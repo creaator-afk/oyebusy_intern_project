@@ -46,6 +46,10 @@ img {
     object-fit: cover;
 }
 
+.image__container img.icon{
+    filter: brightness(1);
+}
+
 .container-fixed-height {
     max-height: 30rem;
 }
