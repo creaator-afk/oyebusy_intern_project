@@ -42,6 +42,8 @@ nav>li {
 
 img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .container-fixed-height {
@@ -49,7 +51,7 @@ img {
 }
 
 .container.layout-center {
-    max-width: 87.5rem;
+    max-width: 75rem;
     margin-inline: auto;
 }
 
@@ -124,20 +126,33 @@ header nav>*:hover {
 
 .hero-layout-2-col {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(23.75rem, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(10rem, 720px));
+    gap: 0.9375rem;
+    justify-content: center;
 }
 
-@media screen and (min-width: 45rem) {
-    .hero-layout-2-col> :first-child {
-        grid-area: span 2 / span 2;
+.hero-layout-2-col .image__container:first-of-type {
+    max-height: 585px;
+    grid-column: span 2;
+    grid-row: span 2;
+    object-fit: cover;
+}
+
+.hero-layout-2-col .image__container:not(:first-of-type)>img {
+    object-fit: cover;
+    object-position: center top;
+}
+
+@media screen and (max-width:75rem) {
+    .hero-layout-2-col {
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     }
 
-}
-
-.hero-layout-2-col> :first-child>img {
-    height: 37.5rem;
-    object-fit: cover;
+    .hero-layout-2-col .image__container:first-of-type {
+        grid-column: auto;
+        grid-row: auto;
+        /* grid-area: auto; */
+    }
 }
 
 .image__container h2 {
