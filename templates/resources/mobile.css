@@ -1,0 +1,494 @@
+:root {
+    --sidebarWidgetSpacing: 30px;
+    --containerWidth: 767px;
+    --containerContentMaxWidth: 400px;
+    --containerVerticalMargin: 20px;
+    --fontFamily: Poppins, Sans-Serif;
+    --fontWeight: 400;
+    --fontSize: 16px;
+    --fontStyle: normal;
+    --lineHeight: 1.88em;
+    --letterSpacing: 0px;
+    --textTransform: default;
+    --btnFontFamily: Poppins;
+    --btnFontWeight: 400;
+    --btnFontSize: 18px;
+    --btnFontStyle: normal;
+    --btnLineHeight: 1em;
+    --btnLetterSpacing: 0px;
+    --btnTextTransform: default;
+    --bottonRoundness: 16px;
+    --buttonPadding: 12px 24px 12px 24px;
+    --btnFontFamily: Poppins;
+    --btnFontWeight: 400;
+    --btnFontSize: 18px;
+    --btnFontStyle: normal;
+    --btnLineHeight: 1em;
+    --btnLetterSpacing: 0px;
+    --btnTextTransform: default;
+    --fontFamily: Poppins, Sans-Serif;
+    --fontWeight: 400;
+    --fontSize: 16px;
+    --fontStyle: normal;
+    --lineHeight: 1.88em;
+    --letterSpacing: 0px;
+    --textTransform: default;
+}
+
+#secondary {
+    --widgetsFontSize: 18px;
+}
+
+.rishi-container[data-strech="full"] {
+    --streched-padding: 15px;
+}
+
+h1, .block-editor-page .editor-styles-wrapper h1, .block-editor-page .editor-post-title__block .editor-post-title__input {
+    --fontFamily: Roboto Slab, Sans-Serif;
+    --fontWeight: 500;
+    --fontSize: 32px;
+    --fontStyle: normal;
+    --lineHeight: 1.3em;
+    --letterSpacing: 0px;
+    --textTransform: default;
+}
+
+h2 {
+    --fontFamily: Roboto Slab, Sans-Serif;
+    --fontWeight: 500;
+    --fontSize: 28px;
+    --fontStyle: normal;
+    --lineHeight: 1.67em;
+    --letterSpacing: 0px;
+    --textTransform: default;
+}
+
+h3 {
+    --fontFamily: Roboto Slab, Sans-Serif;
+    --fontWeight: 700;
+    --fontSize: 26px;
+    --fontStyle: normal;
+    --lineHeight: 1.33em;
+    --letterSpacing: 0px;
+    --textTransform: default;
+}
+
+h4 {
+    --fontFamily: Roboto Slab, Sans-Serif;
+    --fontWeight: 500;
+    --fontSize: 20px;
+    --fontStyle: normal;
+    --lineHeight: 1.33em;
+    --letterSpacing: 0px;
+    --textTransform: default;
+}
+
+h5 {
+    --fontFamily: Roboto Slab, Sans-Serif;
+    --fontWeight: 500;
+    --fontSize: 18px;
+    --fontStyle: normal;
+    --lineHeight: 1.5em;
+    --letterSpacing: 0px;
+    --textTransform: default;
+}
+
+h6 {
+    --fontFamily: Roboto Slab, Sans-Serif;
+    --fontWeight: 700;
+    --fontSize: 16px;
+    --fontStyle: normal;
+    --lineHeight: 1.5em;
+    --letterSpacing: 0px;
+    --textTransform: default;
+}
+
+.rishi-breadcrumb-main-wrap .rishi-breadcrumbs {
+    --fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    --fontWeight: 400;
+    --fontSize: 14px;
+    --fontStyle: default;
+    --lineHeight: 1.75em;
+    --letterSpacing: 0px;
+    --textTransform: default;
+}
+
+.blog .site-content .entry-content-main-wrap {
+    --blogHeadingFontSize: 24px;
+    --blogDividerMarginFirst: 0px 0px 20px 0px;
+}
+
+.blog .site-content .archive-title-wrapper {
+    --margin: 20px;
+    --alignment: left;
+    --padding: 16px 16px 16px 16px;
+}
+
+.single .site-content .entry-header .entry-title {
+    --fontSize: 24px;
+}
+
+.single .main-content-wrapper {
+    --padding: 40px 40px 40px 40px;
+}
+
+.single .rishi-container-wrap {
+    --box-radius: 3px 3px 3px 3px;
+}
+
+.page .main-content-wrapper {
+    --padding: 15px 15px 15px 15px;
+}
+
+.page .rishi-container-wrap {
+    --box-radius: 3px 3px 3px 3px;
+}
+
+.to_top {
+    --topButtonSize: 14px;
+    --topButtonOffset: 10px;
+    --sideButtonOffset: 10px;
+}
+
+.archive.author .site-content .entry-content-main-wrap {
+    --authorHeadingFontSize: 24px;
+    --authorDividerMarginFirst: 0 auto 20px auto;
+}
+
+.archive.author .site-content .archive-title-wrapper {
+    --width: 142px;
+    --margin: 20px;
+}
+
+.rishi-breadcrumb-main-wrap {
+    --padding: 0px 0px 10px 0px;
+}
+
+.search .site-content .entry-content-main-wrap {
+    --searchHeadingFontSize: 24px;
+    --searchDividerMarginFirst: 0 auto 20px auto;
+}
+
+.search .site-content .archive-title-wrapper {
+    --margin: 20px;
+}
+
+.archive .site-content .entry-content-main-wrap {
+    --archiveHeadingFontSize: 24px;
+    --archiveDividerMarginFirst: 0px 0px 20px 0px;
+}
+
+.archive .site-content .archive-title-wrapper {
+    --margin: 20px;
+}
+
+.header-image-section {
+    --max-width: 150px;
+}
+
+.site-header .header-row.top-row {
+    --padding: 16px 0px 16px 0px;
+    --item-gap: 15px;
+}
+
+#rishi-text {
+    --margin: auto 20px auto 20px !important;
+    --fontSize: 15px;
+    --lineHeight: 1.5;
+    --fontWeight: 400;
+    --textTransform: normal;
+}
+
+.header-date-section {
+    --fontSize: 16px;
+    --lineHeight: 2.25;
+    --fontWeight: 400;
+    --textTransform: normal;
+}
+
+#rishi-offcanvas .rishi-mobile-menu {
+    --fontSize: 16px;
+    --fontWeight: 400;
+}
+
+.site-header .site-navigation-1 {
+    --margin: auto 20px auto 20px !important;
+}
+
+.site-header .site-navigation-1 > ul > li > a {
+    --fontFamily: Poppins, Sans-Serif;
+    --fontWeight: 500;
+    --fontSize: 16px;
+    --fontStyle: normal;
+    --lineHeight: 2.25em;
+    --letterSpacing: 0px;
+    --textTransform: normal;
+}
+
+.site-header .site-navigation-1 .sub-menu {
+    --fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    --fontWeight: 400;
+    --fontSize: 16px;
+    --fontStyle: default;
+    --lineHeight: 1.75em;
+    --letterSpacing: 0px;
+    --textTransform: default;
+    --border-radius: 0px 0px 2px 2px !important;
+}
+
+.rishi-header-trigger {
+    --fontSize: 17px;
+    --lineHeight: 1.3;
+    --fontWeight: 500;
+    --textTransform: normal;
+}
+
+.site-header .header-row.middle-row {
+    --padding: 16px 0px 16px 0px;
+    --item-gap: 15px;
+}
+
+.header-randomize-section {
+    --fontSize: 16px;
+    --fontWeight: 400;
+}
+
+#rishi-button {
+    --btnFontSize: 16px;
+    --btnLineHeight: 1.7;
+    --btnFontWeight: 400;
+    --btnTextTransform: normal;
+    --buttonMinWidth: 50px;
+    --margin: 0px 0px 0px 0px;
+    --headerCtaPadding: 10px 20px 10px 20px;
+}
+
+#rishi-header-contacts {
+    --fontSize: 14px;
+    --lineHeight: 1.3;
+    --fontWeight: 400;
+    --textTransform: normal;
+    --margin: 0px 0px 0px 0px;
+}
+
+.site-branding {
+    --LogoMaxWidth: 150px;
+    --margin: 0px 0px 0px 0px !important;
+}
+
+.site-header #logo .site-title {
+    --fontFamily: Yeseva One, Sans-Serif;
+    --fontWeight: 400;
+    --fontSize: 28px;
+    --fontStyle: normal;
+    --lineHeight: 1.1em;
+    --letterSpacing: 0em;
+    --textTransform: default;
+}
+
+.site-header #logo .site-description {
+    --fontFamily: Poppins, Sans-Serif;
+    --fontWeight: 500;
+    --fontSize: 11px;
+    --fontStyle: normal;
+    --lineHeight: 1.33em;
+    --letterSpacing: 0.3em;
+    --textTransform: default;
+}
+
+.site-header .site-navigation-2 {
+    --margin: auto 20px auto 20px !important;
+}
+
+.site-header .site-navigation-2 > ul > li > a {
+    --fontSize: 16px;
+    --lineHeight: 2.25;
+    --fontWeight: 400;
+    --textTransform: normal;
+}
+
+.site-header .site-navigation-2 .sub-menu {
+    --fontSize: 16px;
+    --fontWeight: 400;
+    --border-radius: 0px 0px 2px 2px !important;
+}
+
+#search {
+    --margin: 0px 0px 0px 0px;
+}
+
+.site-header .header-row.bottom-row {
+    --padding: 16px 0px 16px 0px;
+    --item-gap: 15px;
+}
+
+#footer-site-navigation {
+    --margin: 0px 0px 0px 0px;
+    --fontFamily: Poppins, Sans-Serif;
+    --fontWeight: 400;
+    --fontSize: 16px;
+    --fontStyle: normal;
+    --lineHeight: 1.3em;
+    --letterSpacing: 0.3px;
+    --textTransform: normal;
+}
+
+.rishi-footer .footer-top-row {
+    --colSpacing: 40px;
+    --topSpacing: 30px;
+    --botSpacing: 30px;
+    --itemSpacing: 15px;
+}
+
+.rishi-footer .footer-top-row .widget h1, .rishi-footer .footer-top-row .widget h2, .rishi-footer .footer-top-row .widget h3, .rishi-footer .footer-top-row .widget h4, .rishi-footer .footer-top-row .widget h5, .rishi-footer .footer-top-row .widget h6 {
+    --fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    --fontWeight: 400;
+    --fontSize: 16px;
+    --fontStyle: default;
+    --lineHeight: 1.75em;
+    --letterSpacing: 0.4px;
+    --textTransform: uppercase;
+}
+
+.rishi-footer .footer-top-row .widget {
+    --fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    --fontWeight: 400;
+    --fontSize: 16px;
+    --fontStyle: default;
+    --lineHeight: 1.75em;
+    --letterSpacing: 0.4px;
+    --textTransform: default;
+}
+
+.rishi-footer .footer-middle-row {
+    --colSpacing: 40px;
+    --topSpacing: 40px;
+    --botSpacing: 40px;
+    --itemSpacing: 15px;
+}
+
+.rishi-footer .footer-middle-row .widget h1, .rishi-footer .footer-middle-row .widget h2, .rishi-footer .footer-middle-row .widget h3, .rishi-footer .footer-middle-row .widget h4, .rishi-footer .footer-middle-row .widget h5, .rishi-footer .footer-middle-row .widget h6 {
+    --fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    --fontWeight: 400;
+    --fontSize: 16px;
+    --fontStyle: default;
+    --lineHeight: 1.75em;
+    --letterSpacing: 0.4px;
+    --textTransform: uppercase;
+}
+
+.rishi-footer .footer-middle-row .widget {
+    --fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    --fontWeight: 400;
+    --fontSize: 16px;
+    --fontStyle: default;
+    --lineHeight: 1.75em;
+    --letterSpacing: 0.4px;
+    --textTransform: default;
+}
+
+.rishi-footer-copyrights {
+    --margin: 0px 0px 0px 0px;
+    --fontFamily: Poppins, Sans-Serif;
+    --fontWeight: 400;
+    --fontSize: 14px;
+    --fontStyle: normal;
+    --lineHeight: 1.75em;
+    --letterSpacing: 0.6px;
+    --textTransform: default;
+}
+
+#rishi-footer-contacts {
+    --fontSize: 14px;
+    --lineHeight: 1.3;
+    --fontWeight: 400;
+    --textTransform: normal;
+    --margin: 0px 0px 0px 0px;
+}
+
+.rishi-footer .footer-bottom-row {
+    --colSpacing: 40px;
+    --topSpacing: 15px;
+    --botSpacing: 15px;
+    --itemSpacing: 15px;
+}
+
+.rishi-footer .footer-bottom-row .widget h1, .rishi-footer .footer-bottom-row .widget h2, .rishi-footer .footer-bottom-row .widget h3, .rishi-footer .footer-bottom-row .widget h4, .rishi-footer .footer-bottom-row .widget h5, .rishi-footer .footer-bottom-row .widget h6 {
+    --fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    --fontWeight: 400;
+    --fontSize: 16px;
+    --fontStyle: default;
+    --lineHeight: 1.75em;
+    --letterSpacing: 0.4px;
+    --textTransform: uppercase;
+}
+
+.rishi-footer .footer-bottom-row .widget {
+    --fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    --fontWeight: 400;
+    --fontSize: 16px;
+    --fontStyle: default;
+    --lineHeight: 1.75em;
+    --letterSpacing: 0.4px;
+    --textTransform: default;
+}
+
+h1.block-editor-rich-text__editable, .wp-block-post-title {
+    --fontFamily: Roboto Slab, Sans-Serif;
+    --fontWeight: 500;
+    --fontSize: 32px;
+    --fontStyle: normal;
+    --lineHeight: 1.3em;
+    --letterSpacing: 0px;
+    --textTransform: default;
+}
+
+h2.block-editor-rich-text__editable {
+    --fontFamily: Roboto Slab, Sans-Serif;
+    --fontWeight: 500;
+    --fontSize: 28px;
+    --fontStyle: normal;
+    --lineHeight: 1.67em;
+    --letterSpacing: 0px;
+    --textTransform: default;
+}
+
+h3.block-editor-rich-text__editable {
+    --fontFamily: Roboto Slab, Sans-Serif;
+    --fontWeight: 700;
+    --fontSize: 26px;
+    --fontStyle: normal;
+    --lineHeight: 1.33em;
+    --letterSpacing: 0px;
+    --textTransform: default;
+}
+
+h4.block-editor-rich-text__editable {
+    --fontFamily: Roboto Slab, Sans-Serif;
+    --fontWeight: 500;
+    --fontSize: 20px;
+    --fontStyle: normal;
+    --lineHeight: 1.33em;
+    --letterSpacing: 0px;
+    --textTransform: default;
+}
+
+h5.block-editor-rich-text__editable {
+    --fontFamily: Roboto Slab, Sans-Serif;
+    --fontWeight: 500;
+    --fontSize: 18px;
+    --fontStyle: normal;
+    --lineHeight: 1.5em;
+    --letterSpacing: 0px;
+    --textTransform: default;
+}
+
+h6.block-editor-rich-text__editable {
+    --fontFamily: Roboto Slab, Sans-Serif;
+    --fontWeight: 700;
+    --fontSize: 16px;
+    --fontStyle: normal;
+    --lineHeight: 1.5em;
+    --letterSpacing: 0px;
+    --textTransform: default;
+}
