@@ -3,17 +3,52 @@ import PropTypes from "prop-types";
 import {connect} from 'react-redux';
 
 
-const CardItem = () => (
+const CardItem = () => {
 
     // link,image,category,tagline
+    const res = {
+        "pageData": {
+            "breadcrumbItems": [
+                {
+                    "displayName": "Home",
+                    "link": "/blog/"
+                },
+                {
+                    "displayName": "Television",
+                    "link": "/blog/television/"
+                },
+                {
+                    "displayName": "Buying A TV? Here’s Our Helpful TV Guide"
+                }
+            ],
+            "title": "7 Tips To Consider While Testing Smart TV Applications",
+            "content": "<p>From black and white TVs to CRTs to LEDs and LCDs, buying a TV these days involves a lot of research. To save you the trouble of an extensive search, here is our TV buying guide. We have compiled a list of different TVs and their advantages to help you choose the best TV for you and your family.</p><h2>1. LCD Televisions</h2><p>LCD stands for Liquid Crystal Display and these LCD TVs have replaced the CRT (Cathode Ray Tubes) TVs in the 21st century. This technology was used in the eighties in portable computers as Passive matrix LCDs but was too slow for television usage. After much experimentation, by 2008, the LCD TVs managed to conquer the market-beating all the expensive as well as the budget friendly range.</p><p>LCD panels need external light, so a backlight is used to produce visibility. These backlights are Cold Cathode Fluorescent Lamps, commonly known as CCFLs, which have a diffuser to spread white light evenly.</p><p>LCD TVs are not able to capture the black color perfectly and is difficult to see quick movements on the screen.</p><h2>2. LED Televisions</h2><p>LED stands for Light Emitting Diodes and LED TVs are basically LCD panels backlit by LEDs instead of CCFLs. These LCDs are either lit by white LED displays or Red, Green and Blue (RGB) displays.</p><p>There are many advantages of LED displays over LCDs:</p><ul><li>LEDs have a better colour arrangement.</li><li>LED TVs are slim and are much lighter.</li><li>Since these TVs consume less power, they remain cool and there are fewer chances of overheating, thereby, increasing the lifespan of your TV.</li></ul><p>There are quite a few variations as well as developments on the LED television sets, like the OLED and QLED television sets.</p><ul><li>OLED stands for Organic Light Emitting Diodes and in OLED TVs, an organic semiconductor produces light in response to an electric current. Currently, only high-end models of LG and some other manufacturers are using OLED technology. OLED has higher contrast ratios and are available in the 4K format as well. They do not suffer from bad viewing angles in their picture quality. Brightness remains consistent in these TV sets.</li><li>QLEDs use quantum dot technology and nanocrystals are put in front of LEDs and are able to produce much higher resolution.</li></ul><p>Also Read: <a target=\"_blank\" href=\"https://www.urbancompany.com/blog/home/10-essential-tips-to-maintain-your-tv/?utm_source=article&amp;utm_medium=differenttypesoftv&amp;utm_campaign=bloginline\"><span style=\"color:rgb(110, 66, 229);\">10 Essential Tips To Maintain Your TV Set</span></a></p><h2>3. Flat Screen TVs</h2><p>Usually, LED and LCD television sets are flat screen TVs. They provide standard reflections and the sides get darkened when viewed from close. They are not that cumbersome in their size and are easier to handle. Flat screen TVs come in all price ranges.</p><h2>4. Curved Screen TVs</h2><p>While curved screen TVs are bulky, there are certain individual characteristics that make it ideal at times. Many tend to believe that curved screen TVs provide a more realistic experience than flat screens as their viewing angle is wide. They can be viewed from close and there will be less darkening. Curved Screen TVs are expensive. LG makes curved OLED television sets.</p><h2>5. 3D TVs</h2><p>3D television sets offer depth perception and a much immersive experience through stereoscopic displays, multi-view displays, etc. Some display two different images simultaneously and special 3D glasses must be used for getting the perfect vision. Some 3D TV sets are autostereoscopic that do not require 3D glasses. 3D TV sets are rare, except Sony and LG that have a range of 3D TVs while other manufacturers have discontinued them.</p><h2>6. HD TVs</h2><p>HD (High Definition) television sets provide much higher resolution so that the images on your flat panel display suffer less pixelation than the common standard definition (SD) TV. Frame sizes, frame rates and scanning systems are the three main factors for HDTVs. HDTV is the current standard format for all videos.</p><p>At Urban Company, we provide you with professionals who have in-depth knowledge and can guide you in purchasing and <a target=\"_blank\" href=\"https://www.urbancompany.com/hyderabad-tv-repair/?utm_source=article&amp;utm_medium=differenttypesoftv&amp;utm_campaign=bloginline\"><span style=\"color:rgb(110, 66, 229);\">installing your new Television set</span></a>. Our professionals can also help you with TV repair and service. Put aside your worries with Urban Company and enjoy our smooth service at the comfort of your home!</p>",
+            "photo": {
+                "cover": "https://www.tothenew.com/blog/wp-ttn-blog/uploads/2023/10/Screenshot-2023-10-11-at-11.35.16-AM-768x425.png",
+                "thumbnail": "https://www.tothenew.com/blog/wp-ttn-blog/uploads/2023/10/Screenshot-2023-10-11-at-11.35.16-AM-768x425.png"
+            },
+            "tags": [
+                "TV Installation in Noida",
+                "Best Television's in Noida",
+                "Television Services"
+            ]
+        }
+    }
 
-    <div className="ultp-block-item post-id-8">
+    const data = res.pageData;
+
+    const ref = (data.breadcrumbItems.at(1)).link;
+    const image = data.photo.cover;
+    const category = data.breadcrumbItems.at(1).displayName;
+    const caption = data.breadcrumbItems.at(2).displayName;
+
+return(    <div className="ultp-block-item post-id-8">
         <div
             className="ultp-block-content-wrap ultp-block-content-overlay">
             <div
                 className="ultp-block-image ultp-block-image-zoomIn ultp-block-image-overlay ultp-block-image-custom">
                 <a href=""><img
-                    srcSet=""
+                    srcSet={image}
                     alt="The Hidden Mystery Behind Fashion"/></a>
             </div>
             <div
@@ -23,11 +58,11 @@ const CardItem = () => (
                         className="ultp-category-grid ultp-category-classic ultp-category-aboveTitle">
                         <div className="ultp-category-in"><a
                             className="ultp-cat-fashion"
-                            href="https://rishidemos.com/magazine/category/fashion/">""</a>
+                            href={ref}>{category}</a>
                         </div>
                     </div>
                     <h2 className="ultp-block-title "><a
-                        href="https://rishidemos.com/magazine/the-hidden-mystery-behind-fashion/">""</a></h2>
+                        href="https://rishidemos.com/magazine/the-hidden-mystery-behind-fashion/">{caption}</a></h2>
                     <div
                         className="ultp-block-meta ultp-block-meta-dot ultp-block-meta-icon">
                                                                 <span className="ultp-block-author"><svg
@@ -43,6 +78,6 @@ const CardItem = () => (
                 </div>
             </div>
         </div>
-    </div>
-)
+    </div>)
+}
 export default (CardItem);
