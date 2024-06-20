@@ -1,25 +1,33 @@
-import './App.css';
-import './primary.css'
-import {Component} from "react";
-import Footer from "./Components/Footer/Footer";
-import HeroSection from "./Components/HeroSection/HeroSection";
-import Content from "./Components/Content/Content";
-import Carousel from "./Components/Carousel/Carousel";
-import BannerSection from "./Components/BannerSection/BannerSection";
-import Brief from "./Components/Brief/Brief";
-import Description from "./Components/Description/Description";
+import "./style.min.css"
+import "./main.css"
+import "./root.css"
+import "./elementor.css"
+import "./media-query.css"
+import "./style(1).min.css"
+import "./tablet.css"
+import "./ui-color.css"
+import "./comapnion-gen.css"
+import Footer from "./component/footer/Footer";
+import Header from "./component/header/Header";
+import Content from "./component/content/Content";
+
 
 function App() {
-    return (
-        <div>
-            <HeroSection/>
-            <Content/>
-            <Carousel/>
-            <BannerSection/>
-            <Description/>
-            <Brief/>
-            <Footer/>
-        </div>);
+    return (<div>
+            <body
+                className="home page-template-default page page-id-120 wp-custom-logo wp-embed-responsive postx-page default-layout rishi-has-blocks full-width elementor-default elementor-kit-3"
+                itemType="https://schema.org/WebPage" itemScope="">
+            <div id="main-container" className="site">
+                <a className="skip-link screen-reader-text" href="https://rishidemos.com/magazine/#primary">Skip to
+                    content</a>
+                <Header/>
+                <Content/>
+                <Footer/>
+            </div>
+            </body>
+        </div>
+
+    );
 }
 
 export default App;
