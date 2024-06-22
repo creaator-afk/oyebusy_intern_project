@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import MixedContent from "./MixedContent";
-import Banner from "./Banner";
-import ListView from "./ListView";
-import Carousel from "./Carousel";
-import Focused from "./Focused";
-import EntryContent from "./EntryContent";
+import MixedContent from "./mixedContent/MixedContent";
+import Banner from "./banner/Banner";
+import ListView from "./listView/ListView";
+import Carousel from "./carousel/Carousel";
+import Focused from "./focused/Focused";
+import EntryContent from "./entryContent/EntryContent";
 
 
 
