@@ -19,7 +19,7 @@ function App() {
                     className="home page-template-default page page-id-120 wp-custom-logo wp-embed-responsive postx-page default-layout rishi-has-blocks full-width elementor-default elementor-kit-3"
                     itemType="https://schema.org/WebPage" itemScope="">
                 <div id="main-container" className="site">
-                    <a className="skip-link screen-reader-text" href="https://rishidemos.com/magazine/#primary">Skip to
+                    <a className="skip-link screen-reader-text" href="#">Skip to
                         content</a>
                     <Header/>
                     <Content/>

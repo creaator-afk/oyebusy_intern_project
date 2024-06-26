@@ -368,7 +368,7 @@ const Focused = () => {
                                         <ul>
                                             <li><a
                                                 className="ultp-prev-action ultp-disable"
-                                                href="https://rishidemos.com/magazine/#">
+                                                href="/#">
                                                 <svg
                                                     enableBackground="new 0 0 477.175 477.175"
                                                     version="1.1"

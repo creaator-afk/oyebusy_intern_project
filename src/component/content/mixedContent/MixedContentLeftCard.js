@@ -22,8 +22,8 @@ const MixedContentLeftCard = ({href, image, title, date, content}) => (
 
                         </path>
                     </svg>
-                        <a href="https://rishidemos.com/magazine/author/rishidemos/">
-                            Rishi
+                        <a href="#">
+                            Kshitij
                         </a>
                     </span>
                     <span className="ultp-block-date">

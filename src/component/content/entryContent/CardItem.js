@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import {connect} from 'react-redux';
 
 
-const CardItem = ({follow,image,category,caption}) => (
+const CardItem = ({follow,image,category,caption,href}) => (
 
     // link,image,category,tagline
     // const res = {
@@ -47,7 +47,7 @@ const CardItem = ({follow,image,category,caption}) => (
             className="ultp-block-content-wrap ultp-block-content-overlay">
             <div
                 className="ultp-block-image ultp-block-image-zoomIn ultp-block-image-overlay ultp-block-image-custom">
-                <a href=""><img
+                <a href={href}><img
                     srcSet={image}
                     alt="The Hidden Mystery Behind Fashion"/></a>
             </div>
@@ -62,14 +62,14 @@ const CardItem = ({follow,image,category,caption}) => (
                         </div>
                     </div>
                     <h2 className="ultp-block-title "><a
-                        href="https://rishidemos.com/magazine/the-hidden-mystery-behind-fashion/">{caption}</a></h2>
+                        href={href}>{caption}</a></h2>
                     <div
                         className="ultp-block-meta ultp-block-meta-dot ultp-block-meta-icon">
                                                                 <span className="ultp-block-author"><svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     viewBox="0 0 18 20"><path
                                                                     d="M18,19 C18,19.5522847 17.5522847,20 17,20 C16.4477153,20 16,19.5522847 16,19 L16,17 C16,15.3431458 14.6568542,14 13,14 L5,14 C3.34314575,14 2,15.3431458 2,17 L2,19 C2,19.5522847 1.55228475,20 1,20 C0.44771525,20 0,19.5522847 0,19 L0,17 C0,14.2385763 2.23857625,12 5,12 L13,12 C15.7614237,12 18,14.2385763 18,17 L18,19 Z M9,10 C6.23857625,10 4,7.76142375 4,5 C4,2.23857625 6.23857625,0 9,0 C11.7614237,0 14,2.23857625 14,5 C14,7.76142375 11.7614237,10 9,10 Z M9,8 C10.6568542,8 12,6.65685425 12,5 C12,3.34314575 10.6568542,2 9,2 C7.34314575,2 6,3.34314575 6,5 C6,6.65685425 7.34314575,8 9,8 Z"></path></svg><a
-                                                                    href="https://rishidemos.com/magazine/author/rishidemos/">Rishi</a></span><span
+                                                                    href={href}>Kshitij</a></span><span
                         className="ultp-block-date"><svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 18 19"><path

@@ -25,22 +25,22 @@ class Drawer extends Component {
                             <nav id="rishi-mobile-menu" className="rishi-mobile-menu menu-default">
                                 <ul id="menu-menu-2" className="">
                                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-120 current_page_item menu-item-124">
-                                        <a href="https://rishidemos.com/magazine/" aria-current="page">Home</a></li>
+                                        <a href="#" aria-current="page">Home</a></li>
                                     <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-87">
                                         <a
-                                            href="https://rishidemos.com/magazine/category/fashion/">Fashion</a>
+                                            href="#">Fashion</a>
                                     </li>
                                     <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-88">
                                         <a
-                                            href="https://rishidemos.com/magazine/category/technology/">Technology</a>
+                                            href="#">Technology</a>
                                     </li>
                                     <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-287">
                                         <a
-                                            href="https://rishidemos.com/magazine/category/life-style/">Life
+                                            href="#">Life
                                             Style</a></li>
                                     <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-90">
                                         <a
-                                            href="https://rishidemos.com/magazine/category/environment/">Environment</a>
+                                            href="#">Environment</a>
                                     </li>
                                 </ul>
                             </nav>

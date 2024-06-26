@@ -959,25 +959,25 @@ const MixedContent = () => {
                                     <ul className="ultp-taxonomy-items  ultp-taxonomy-animation-none ultp-taxonomy-column-1 ultp-taxonomy-layout-1">
                                         <li className="ultp-block-item ultp-taxonomy-item">
                                             <a
-                                                href="https://rishidemos.com/magazine/category/environment/"><span
+                                                href="#"><span
                                                 className="ultp-taxonomy-name">Environment</span><span
                                                 className="ultp-taxonomy-count">5</span></a>
                                         </li>
                                         <li className="ultp-block-item ultp-taxonomy-item">
                                             <a
-                                                href="https://rishidemos.com/magazine/category/fashion/"><span
+                                                href="#"><span
                                                 className="ultp-taxonomy-name">Fashion</span><span
                                                 className="ultp-taxonomy-count">5</span></a>
                                         </li>
                                         <li className="ultp-block-item ultp-taxonomy-item">
                                             <a
-                                                href="https://rishidemos.com/magazine/category/life-style/"><span
+                                                href="#"><span
                                                 className="ultp-taxonomy-name">Life Style</span><span
                                                 className="ultp-taxonomy-count">5</span></a>
                                         </li>
                                         <li className="ultp-block-item ultp-taxonomy-item">
                                             <a
-                                                href="https://rishidemos.com/magazine/category/technology/"><span
+                                                href="#"><span
                                                 className="ultp-taxonomy-name">Technology</span><span
                                                 className="ultp-taxonomy-count">5</span></a>
                                         </li>

@@ -183,6 +183,7 @@ const EntryContent = () => {
                                    image={card.pageData.photo.cover}
                                    category={card.pageData.breadcrumbItems.at(1).displayName}
                                    caption={card.pageData.breadcrumbItems.at(2).displayName}
+                                   href={card.meta["og:url"]}
                                />
                             ))}
                         </Fragment>

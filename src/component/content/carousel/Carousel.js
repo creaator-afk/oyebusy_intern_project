@@ -250,7 +250,7 @@ const Carousel = () => {
                                  data-postid="120" data-selfpostid="yes">
                                 <ul>
                                     <li><a className="ultp-prev-action ultp-disable"
-                                           href="https://rishidemos.com/magazine/#">
+                                           href="#">
                                         <svg
                                             enable-background="new 0 0 477.175 477.175"
                                             version="1.1"
