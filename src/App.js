@@ -10,9 +10,6 @@ import "./ui-color.css"
 import Footer from "./component/footer/Footer";
 import Header from "./component/header/Header";
 import Content from "./component/content/Content";
-import {Provider} from "react-redux";
-import store from "./store";
-
 
 function App() {
     return (
